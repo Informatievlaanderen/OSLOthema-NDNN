@@ -1,0 +1,69 @@
+name: Convert the codelist.csv into a .ttl file
+
+on:
+    workflow_call:
+        inputs:
+            config-file:
+                description: "Name of the csv file. Example: codelijsten/codelijst.csv"
+                required: true
+                type: string
+
+jobs:
+    generate-codelist:
+        # The type of runner that the job will run on
+        runs-on: ${{ matrix.os }}
+        strategy:
+            matrix:
+                os: [ubuntu-latest]
+                # Different Node versions. Each node version will trigger the action
+                node-version:
+                    - 24.x
+        steps:
+            - name: Checkout repository
+              uses: actions/checkout@v4
+
+            - name: Install jq
+              run: sudo apt-get install jq
+
+            - name: Install codelist-generator
+              run: npm install @oslo-flanders/codelist-generator
+
+            # Run the generator
+            - name: Run oslo-codelist-generator
+              id: codelist-generator
+              run: |
+                  npx oslo-codelist-generator --input ${{ github.event.inputs.config-file }} --language nl 2>&1 | tee output.log
+                  cat output.log
+                  cat output.log >> "$GITHUB_STEP_SUMMARY"
+                  if grep -i "error" output.log; then
+                    echo "Error found in workflow output"
+                    exit 1
+                  fi
+            - name: Check if codelist.ttl exists
+              run: |
+                  if [ -f ./codelist.ttl ]; then
+                    echo "codelist.ttl exists."
+                  else
+                    echo "codelist.ttl does not exist."
+                    exit 1
+                  fi
+
+            - name: Move and rename generated file
+              run: |
+                  # Extract directory and filename without extension
+                  input_file="${{ github.event.inputs.config-file }}"
+                  output_dir=$(dirname "$input_file")
+                  base_filename=$(basename "$input_file" .csv)
+                  output_file="${output_dir}/${base_filename}.ttl"
+
+                  # Move the generated codelist.ttl to the correct location
+                  mv ./codelist.ttl "$output_file"
+                  echo "output_file=$output_file" >> "$GITHUB_ENV"
+
+            - name: Commit and push generated file
+              run: |
+                  git config --local user.email "action@github.com"
+                  git config --local user.name "GitHub Action"
+                  git add "${{ env.output_file }}"
+                  git commit -m "Generate codelist: ${{ env.output_file }}" || echo "No changes to commit"
+                  git push
