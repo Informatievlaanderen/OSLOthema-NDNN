@@ -2,7 +2,7 @@
   {
     "name": "mijn-applicatieprofiel",
     "type": "ap",
-    "eap": "MijnApplicatieprofiel-AP.eap",
+    "eap": "NDNN.eap",
     "diagram": "MijnApplicatieprofiel",
     "template": "mijn-applicatieprofiel-ap.j2",
     "title": "Mijn Applicatieprofiel",
