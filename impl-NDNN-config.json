@@ -1,0 +1,52 @@
+{
+  "title": "Implementatiemodel Nudging Down Night Noise",
+  "category": "https://data.vlaanderen.be/id/concept/StandaardType/Implementatiemodel",
+  "usage": "https://data.vlaanderen.be/id/concept/StandaardGebruik/Aanbevolen",
+  "status": "https://data.vlaanderen.be/id/concept/StandaardStatus/OntwerpStandaard",
+  "responsibleOrganisation": [
+    {
+      "name": "Agentschap Digitaal Vlaanderen",
+      "resourceReference": "https://data.vlaanderen.be/id/organisatie/OVO002949"
+    }
+  ],
+  "publicationDate": "TBD",
+  "descriptionFileName": "NDNN-description.md",
+  "specificationDocuments": [
+    {
+      "name": "Implementatiemodel Nudging Down Night Noise",
+      "resourceReference": "https://data.vlaanderen.be/doc/implementatiemodel/klantvolgsysteem/"
+    }
+  ],
+  "documentation": [],
+  "charter": {
+"name": "Charter NDNN",
+    "resourceReference": "https://raw.githubusercontent.com/Informatievlaanderen/OSLOthema-NDNN/standaardenregister/charter/Werkgroep charter OSLO_NudgingDownNightNoise.pdf"
+},
+  "reports": [
+{
+      "name": "Verslag Business Werkgroep - 5 maart 2026",
+      "resourceReference": "https://raw.githubusercontent.com/Informatievlaanderen/OSLOthema-NDNN/standaardenregister/reports/Verslag Nuding Down Night Noise business werkgroep 05-03-2026 (1).pdf"
+    },
+],
+  "presentations": [
+{
+      "name": "Presentatie Business Werkgroep -  5 maart 2026",
+      "resourceReference": "https://raw.githubusercontent.com/Informatievlaanderen/OSLOthema-NDNN/standaardenregister/presentations/OSLOthema-NDNN.pdf"
+    },
+    {
+      "name": "Presentatie Thematische Werkgroep - 2 April 2026",
+      "resourceReference": "https://raw.githubusercontent.com/Informatievlaanderen/OSLOthema-NDNN/standaardenregister/presentations/Presentatie Thematische werkgroep 1 NDNN 02-04-2026.pdf"
+    }
+],
+  "implementations": [],
+  "relevantStandards": [],
+  "dataExamples": [],
+  "dateOfRegistration": "2025-10-27",
+  "dateOfAcknowledgementByWorkingGroup": "TBD",
+  "dateOfAcknowledgementBySteeringCommittee": "TBD",
+  "datePublicReviewStart": "TBD",
+  "datePublicReviewEnd": "TBD",
+  "endOfPublicationDate": "TBD",
+  "domain": "https://data.vlaanderen.be/id/concept/Domein/Werk",
+  "functionalScope": "Implementatie van een datamodel voor het uitwisselen van gegevens rondom geluid tussen Stad Leuven en Stad Gent."
+}
