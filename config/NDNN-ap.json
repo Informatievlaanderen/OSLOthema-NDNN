@@ -1,6 +1,6 @@
 [
   {
-    "name": "mijn-applicatieprofiel",
+    "name": "NDNN",
     "type": "ap",
     "eap": "NDNN.eap",
     "diagram": "MijnApplicatieprofiel",
@@ -13,6 +13,8 @@
     "contributors-column": "MijnKolom",
     "site": "site-skeleton/mijn-applicatieprofiel-ap",
     "feedbackurl": "https://github.com/Informatievlaanderen/OSLOthema-mijnThema/issues",
-    "standaardregisterurl": "https://data.vlaanderen.be/standaarden/TODO/CORRECT-URL/"
+    "standaardregisterurl": "https://data.vlaanderen.be/standaarden/doc/implementatiemodel/nudgingdownnightnoise/ontwerpstandaard/2026-04-14"
   }
+
+
 ]
