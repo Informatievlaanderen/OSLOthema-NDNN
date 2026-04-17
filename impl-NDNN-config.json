@@ -25,17 +25,17 @@
   "reports": [
 {
       "name": "Verslag Business Werkgroep - 5 maart 2026",
-      "resourceReference": "https://raw.githubusercontent.com/Informatievlaanderen/OSLOthema-NDNN/standaardenregister/reports/Verslag_Nuding_Down_Night_Noise_business_werkgroep_05-03-2026_(1).pdf"
+      "resourceReference": "https://raw.githubusercontent.com/Informatievlaanderen/OSLOthema-NDNN/standaardenregister/reports/https://github.com/Informatievlaanderen/OSLOthema-NDNN/blob/standaardenregister/reports/Verslag%20Nuding%20Down%20Night%20Noise%20business%20werkgroep%2005-03-2026%20(1).pdf"
     }
 ],
   "presentations": [
 {
       "name": "Presentatie Business Werkgroep -  5 maart 2026",
-      "resourceReference": "https://raw.githubusercontent.com/Informatievlaanderen/OSLOthema-NDNN/standaardenregister/presentations/Presentatie_Business_Werkgroep_NDNN_05-03-2026.pdf"
+      "resourceReference": "https://raw.githubusercontent.com/Informatievlaanderen/OSLOthema-NDNN/standaardenregister/presentations/Presentatie%20Business%20Werkgroep%20NDNN%2005-03-2026.pdf"
     },
     {
       "name": "Presentatie Thematische Werkgroep - 2 April 2026",
-      "resourceReference": "https://raw.githubusercontent.com/Informatievlaanderen/OSLOthema-NDNN/standaardenregister/presentations/Presentatie_Thematische_werkgroep_1_NDNN 02-04-2026.pdf"
+      "resourceReference": "https://raw.githubusercontent.com/Informatievlaanderen/OSLOthema-NDNN/standaardenregister/presentations/Presentatie%20Thematische%20werkgroep%201%20NDNN%2002-04-2026.pdf"
     }
 ],
   "implementations": [],
