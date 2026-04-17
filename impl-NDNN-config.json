@@ -9,7 +9,7 @@
       "resourceReference": "https://data.vlaanderen.be/id/organisatie/OVO002949"
     }
   ],
-  "publicationDate": " ",
+  "publicationDate": "YYYY-MM-DD",
   "descriptionFileName": "NDNN-description.md",
   "specificationDocuments": [
     {
@@ -42,11 +42,10 @@
   "relevantStandards": [],
   "dataExamples": [],
   "dateOfRegistration": "2025-10-27",
-  "dateOfAcknowledgementByWorkingGroup": " ",
-  "dateOfAcknowledgementBySteeringCommittee": " ",
-  "datePublicReviewStart": " ",
-  "datePublicReviewEnd": " ",
-  "endOfPublicationDate": " ",
-  "domain": "https://data.vlaanderen.be/id/concept/Domein/Werk",
-  "functionalScope": "Implementatie van een datamodel voor het uitwisselen van gegevens rondom geluid tussen Stad Leuven en Stad Gent."
+  "dateOfAcknowledgementByWorkingGroup": "YYYY-MM-DD",
+  "dateOfAcknowledgementBySteeringCommittee": "YYYY-MM-DD",
+  "datePublicReviewStart": "YYYY-MM-DD",
+  "datePublicReviewEnd": "YYYY-MM-DD",
+  "endOfPublicationDate": "YYYY-MM-DD",
+  "domain": "https://data.vlaanderen.be/id/concept/Domein/Werk"
 }
