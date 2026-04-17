@@ -1,5 +1,5 @@
 {
-  "title": "Implementatiemodel Nudging Down Night Noise",
+  "title": "Implementatiemodel Geluidsmeldingen en -metingen",
   "category": "https://data.vlaanderen.be/id/concept/StandaardType/Implementatiemodel",
   "usage": "https://data.vlaanderen.be/id/concept/StandaardGebruik/Aanbevolen",
   "status": "https://data.vlaanderen.be/id/concept/StandaardStatus/OntwerpStandaard",
@@ -9,7 +9,7 @@
       "resourceReference": "https://data.vlaanderen.be/id/organisatie/OVO002949"
     }
   ],
-  "publicationDate": "YYYY-MM-DD",
+  "publicationDate": "2026-04-17",
   "descriptionFileName": "NDNN-description.md",
   "specificationDocuments": [
     {
@@ -38,14 +38,12 @@
       "resourceReference": "https://raw.githubusercontent.com/Informatievlaanderen/OSLOthema-NDNN/standaardenregister/presentations/Presentatie%20Thematische%20werkgroep%201%20NDNN%2002-04-2026.pdf"
     }
 ],
-  "implementations": [],
-  "relevantStandards": [],
-  "dataExamples": [],
   "dateOfRegistration": "2025-10-27",
-  "dateOfAcknowledgementByWorkingGroup": "YYYY-MM-DD",
-  "dateOfAcknowledgementBySteeringCommittee": "YYYY-MM-DD",
-  "datePublicReviewStart": "YYYY-MM-DD",
-  "datePublicReviewEnd": "YYYY-MM-DD",
-  "endOfPublicationDate": "YYYY-MM-DD",
+  "dateOfAcknowledgementByWorkingGroup": " ",
+  "dateOfAcknowledgementBySteeringCommittee": " ",
+  "datePublicReviewStart": " ",
+  "datePublicReviewEnd": " ",
+  "endOfPublicationDate": " ",
   "domain": "https://data.vlaanderen.be/id/concept/Domein/Werk"
+  "functionalScope": "Uniform modelleren en uitwisselen van verkeersmeldingen en -metingen met de klasse Observatie als centrale schakel (over verkeersobjecten, situaties en mobiliteitshinder)."
 }
