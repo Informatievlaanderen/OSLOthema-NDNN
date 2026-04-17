@@ -9,7 +9,7 @@
       "resourceReference": "https://data.vlaanderen.be/id/organisatie/OVO002949"
     }
   ],
-  "publicationDate": "TBD",
+  "publicationDate": " ",
   "descriptionFileName": "NDNN-description.md",
   "specificationDocuments": [
     {
@@ -25,7 +25,7 @@
   "reports": [
 {
       "name": "Verslag Business Werkgroep - 5 maart 2026",
-      "resourceReference": "https://raw.githubusercontent.com/Informatievlaanderen/OSLOthema-NDNN/standaardenregister/reports/https://github.com/Informatievlaanderen/OSLOthema-NDNN/standaardenregister/reports/Verslag%20Nuding%20Down%20Night%20Noise%20business%20werkgroep%2005-03-2026%20(1).pdf"
+      "resourceReference": "https://raw.githubusercontent.com/Informatievlaanderen/OSLOthema-NDNN/standaardenregister/reports/Verslag%20Nuding%20Down%20Night%20Noise%20business%20werkgroep%2005-03-2026%20(1).pdf"
     }
 ],
   "presentations": [
@@ -42,11 +42,11 @@
   "relevantStandards": [],
   "dataExamples": [],
   "dateOfRegistration": "2025-10-27",
-  "dateOfAcknowledgementByWorkingGroup": "TBD",
-  "dateOfAcknowledgementBySteeringCommittee": "TBD",
-  "datePublicReviewStart": "TBD",
-  "datePublicReviewEnd": "TBD",
-  "endOfPublicationDate": "TBD",
+  "dateOfAcknowledgementByWorkingGroup": " ",
+  "dateOfAcknowledgementBySteeringCommittee": " ",
+  "datePublicReviewStart": " ",
+  "datePublicReviewEnd": " ",
+  "endOfPublicationDate": " ",
   "domain": "https://data.vlaanderen.be/id/concept/Domein/Werk",
   "functionalScope": "Implementatie van een datamodel voor het uitwisselen van gegevens rondom geluid tussen Stad Leuven en Stad Gent."
 }
