@@ -39,11 +39,11 @@
     }
 ],
   "dateOfRegistration": "2025-10-27",
-  "dateOfAcknowledgementByWorkingGroup": " ",
-  "dateOfAcknowledgementBySteeringCommittee": " ",
-  "datePublicReviewStart": " ",
-  "datePublicReviewEnd": " ",
-  "endOfPublicationDate": " ",
+  "dateOfAcknowledgementByWorkingGroup": "",
+  "dateOfAcknowledgementBySteeringCommittee": "",
+  "datePublicReviewStart": "",
+  "datePublicReviewEnd": "",
+  "endOfPublicationDate": "",
   "domain": "https://data.vlaanderen.be/id/concept/Domein/Werk",
   "functionalScope": "Uniform modelleren en uitwisselen van verkeersmeldingen en -metingen met de klasse Observatie als centrale schakel (over verkeersobjecten, situaties en mobiliteitshinder)."
 }
