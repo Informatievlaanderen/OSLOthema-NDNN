@@ -9,12 +9,12 @@
       "resourceReference": "https://data.vlaanderen.be/id/organisatie/OVO002949"
     }
   ],
-  "publicationDate": "2026-04-17",
+  "publicationDate": "2026-04-14",
   "descriptionFileName": "NDNN-description.md",
   "specificationDocuments": [
     {
       "name": "Implementatiemodel Nudging Down Night Noise",
-      "resourceReference": "https://data.vlaanderen.be/doc/implementatiemodel/nudgingdownnightnoise/"
+      "resourceReference": "https://data.vlaanderen.be/doc/implementatiemodel/nudgingdownnightnoise/2026-04-14"
     }
   ],
   "documentation": [],
