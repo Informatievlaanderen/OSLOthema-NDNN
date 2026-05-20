@@ -14,7 +14,7 @@
   "specificationDocuments": [
     {
       "name": "Implementatiemodel Nudging Down Night Noise",
-      "resourceReference": "https://data.vlaanderen.be/doc/implementatiemodel/nudgingdownnightnoise/2026-04-14"
+      "resourceReference": "https://data.vlaanderen.be/doc/implementatiemodel/geluidsmeldingen-en-geluidsmetingen/ontwerpstandaard/2026-05-20"
     }
   ],
   "documentation": [],
@@ -47,5 +47,5 @@
   "datePublicReviewStart": "",
   "datePublicReviewEnd": "",
   "endOfPublicationDate": "",
-  "domain": "https://data.vlaanderen.be/id/concept/Domein/Werk"
+  "domain": "https://data.vlaanderen.be/id/concept/Domein/Welzijn"
 }
