@@ -14,7 +14,7 @@
       "type": {
         "description": "CSS rendering type",
         "type": "string",
-        "enum": ["voc", "ap"]
+        "enum": ["voc", "ap", "impl"]
       },
       "eap": {
         "description": "Enterprise Architect EAP bestandsnaam",
