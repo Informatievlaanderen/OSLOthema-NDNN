@@ -65,7 +65,12 @@
     "resourceReference": "https://data.vlaanderen.be/doc/applicatieprofiel/generiek-basis/"
   }
 ],
-  "dataExamples": [],
+  "dataExamples": [
+  {
+    "name": "Overzicht use cases",
+    "resourceReference": "https://github.com/Informatievlaanderen/OSLOthema-NDNN/blob/main/usecases.md"
+  }
+],
   "dateOfRegistration": "2025-10-27",
   "dateOfAcknowledgementByWorkingGroup": "",
   "dateOfAcknowledgementBySteeringCommittee": "",
