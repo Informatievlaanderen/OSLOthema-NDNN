@@ -1,4 +1,4 @@
-# Verkeersmeldingen en -metingen
+# Geluidsmeldingen en -metingen
 
 <!--TODO: pas de titel aan van de README naar de naam van het traject zoals bijvoorbeeld 'Energiehuis'-->
 
