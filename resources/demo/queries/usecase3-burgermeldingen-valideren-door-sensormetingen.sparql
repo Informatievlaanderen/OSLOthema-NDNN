@@ -1,0 +1,58 @@
+PREFIX prov: <http://www.w3.org/ns/prov#>
+PREFIX locn: <http://www.w3.org/ns/locn#>
+PREFIX time: <http://www.w3.org/2006/time#>
+PREFIX schema: <https://schema.org/>
+PREFIX oa: <http://www.w3.org/ns/oa>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX sosa: <http://www.w3.org/ns/sosa/>
+PREFIX melding: <https://data.vlaanderen.be/ns/melding#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT ?meldingId ?soortMelding ?meldingDoelwit ?gebeurtenisTijd ?gebeurtenisPlaats ?gebeurtenisType ?observatieId ?observatieResultaatEenheid ?observatieResultaatWaarde ?observatieFenomeentijdTijd ?sensorId ?sensorPlaatsAdres ?sensorPlaatsaanduiding WHERE {
+  ?meldingId rdf:type melding:Melding .
+  ?meldingId dcterms:type ?soortMelding .
+  ?meldingId oa:hasTarget ?meldingDoelwit .
+  {
+    SELECT ?meldingDoelwit ?gebeurtenisTijd ?gebeurtenisPlaats ?gebeurtenisType ?sensorId ?sensorPlaatsAdres ?sensorPlaatsaanduiding WHERE {
+      ?meldingDoelwit rdf:type schema:Event .
+      ?meldingDoelwit time:hasTime ?gebeurtenisTijd .
+      ?meldingDoelwit prov:atLocation ?gebeurtenisPlaats .
+      ?meldingDoelwit dcterms:type ?gebeurtenisType .
+    }
+  }
+  {
+    SELECT ?observatieId ?observatieResultaatEenheid ?observatieResultaatWaarde ?observatieFenomeentijdTijd ?sensorId ?sensorPlaatsAdres ?sensorPlaatsaanduiding WHERE {
+  ?observatieId rdf:type sosa:Observation .
+  ?observatieId sosa:madeBySensor ?sensorId .
+  ?observatieId sosa:hasResult ?observatieResultaatId .
+  ?observatieId sosa:phenomenonTime ?observatieFenomeentijdId .
+      {
+        SELECT ?observatieResultaatId ?observatieResultaatEenheid ?observatieResultaatWaarde WHERE {
+          ?observatieResultaatId rdf:type schema:QuantitativeValue .
+          ?observatieResultaatId schema:unit ?observatieResultaatEenheid .
+          ?observatieResultaatId schema:value ?observatieResultaatWaarde .
+        }
+      }
+      {
+        SELECT ?observatieFenomeentijdId ?observatieFenomeentijdTijd WHERE {
+          ?observatieFenomeentijdId rdf:type time:Instant .
+          ?observatieFenomeentijdId time:inXSDDateTime ?observatieFenomeentijdTijd .
+        }
+      }
+      {
+        SELECT ?sensorId ?sensorPlaatsAdres ?sensorPlaatsaanduiding WHERE {
+          ?sensorId rdf:type sosa:Sensor .
+          ?sensorId prov:atLocation ?sensorPlaatsId .
+          {
+            SELECT ?sensorPlaatsId ?sensorPlaatsAdres ?sensorPlaatsaanduiding  WHERE {
+              ?sensorPlaatsId rdf:type locn:Address .
+              ?sensorPlaatsId locn:fullAddress ?sensorPlaatsAdres .
+              ?sensorPlaatsId locn:locatorDesignator ?sensorPlaatsaanduiding .
+            }
+          }
+          FILTER(STR(?gebeurtenisPlaats) = STR(?sensorPlaatsaanduiding))
+        }
+      }
+    }
+  }
+  FILTER(?observatieFenomeentijdTijd = ?gebeurtenisTijd)
+}

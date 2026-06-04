@@ -1,8 +1,9 @@
 prefixes:
   ex: https://example.com/
+  ex-sensor: https://example.com/sensor/
   melding: https://data.vlaanderen.be/ns/melding#
   dcterms: http://purl.org/dc/terms/
-  oa: http://www.w3.org/ns/oa
+  oa: http://www.w3.org/ns/oa#
   schema: https://schema.org/
   xsd: http://www.w3.org/2001/XMLSchema#
   prov: http://www.w3.org/ns/prov#
@@ -17,15 +18,15 @@ mappings:
   sensoren:
     sources:
       - ['sensoren.csv~csv']
-    s: ex:$(Object.id)
+    s: ex-sensor:$(Object.id)
     po:
       - [a, sosa:Sensor] # Klasse Sensor
-      - [prov:atLocation, ex:$(Object.id)#adres~iri] # Sensor.ligging (Adresvoorstelling)
+      - [prov:atLocation, ex-sensor:$(Object.id)#adres~iri] # Sensor.ligging (Adresvoorstelling)
 
   sensoren-adres:
     sources:
       - ['sensoren.csv~csv']
-    s: ex:$(Object.id)#adres
+    s: ex-sensor:$(Object.id)#adres
     po:
       - [a, locn:Address] # Klasse Adresvoorstelling
       - [locn:fullAddress, $(sensorlocatie), nl~lang] # Adresvoorstelling.volledigAdres

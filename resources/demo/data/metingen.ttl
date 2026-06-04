@@ -1,5 +1,5 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix oa: <http://www.w3.org/ns/oa> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
 @prefix ma: <http://www.w3.org/ns/ma-ont#> .
 @prefix rdfs: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
@@ -12,151 +12,152 @@
 @prefix sosa: <http://www.w3.org/ns/sosa/> .
 @prefix time: <http://www.w3.org/2006/time#> .
 @prefix ex: <https://example.com/> .
+@prefix ex-meting: <https://example.com/meting/> .
 @prefix melding: <https://data.vlaanderen.be/ns/melding#> .
 @prefix locn: <http://www.w3.org/ns/locn#> .
 @prefix adms: <http://www.w3.org/ns/adms#> .
 @prefix qudt: <http://qudt.org/3.2.0/vocab/unit/> .
 
-ex:23594556 rdfs:type sosa:Observation ;
-	adms:identifier <https://example.com/23594556#identificator> ;
-	sosa:hasResult <https://example.com/23594556#resultaat> ;
-	sosa:madeBySensor ex:395623 ;
-	sosa:phenomenonTime <https://example.com/23594556#fenomeentijd> .
+ex-meting:23594556 rdfs:type sosa:Observation ;
+	adms:identifier <https://example.com/meting/23594556#identificator> ;
+	sosa:hasResult <https://example.com/meting/23594556#resultaat> ;
+	sosa:madeBySensor ex-meting:395623 ;
+	sosa:phenomenonTime <https://example.com/meting/23594556#fenomeentijd> .
 
-<https://example.com/23594556#fenomeentijd> rdfs:type time:Instant ;
+<https://example.com/meting/23594556#fenomeentijd> rdfs:type time:Instant ;
 	time:inXSDDateTime "2025-10-22T00:00:00.000"^^xsd:DateTime .
 
-<https://example.com/23594556#identificator> rdfs:type adms:Identifier ;
+<https://example.com/meting/23594556#identificator> rdfs:type adms:Identifier ;
 	skos:notation "23594556" .
 
-<https://example.com/23594556#resultaat> rdfs:type schema:QuantitativeValue ;
-	schema:unit "http://qudt.org/3.2.0/vocab/unit/DeciB_A" ;
+<https://example.com/meting/23594556#resultaat> rdfs:type schema:QuantitativeValue ;
+	schema:unit qudt:DeciB_A ;
 	schema:value "61.0"^^xsd:float .
 
-ex:23594557 rdfs:type sosa:Observation ;
-	adms:identifier <https://example.com/23594557#identificator> ;
-	sosa:hasResult <https://example.com/23594557#resultaat> ;
-	sosa:madeBySensor ex:395623 ;
-	sosa:phenomenonTime <https://example.com/23594557#fenomeentijd> .
+ex-meting:23594557 rdfs:type sosa:Observation ;
+	adms:identifier <https://example.com/meting/23594557#identificator> ;
+	sosa:hasResult <https://example.com/meting/23594557#resultaat> ;
+	sosa:madeBySensor ex-meting:395623 ;
+	sosa:phenomenonTime <https://example.com/meting/23594557#fenomeentijd> .
 
-<https://example.com/23594557#fenomeentijd> rdfs:type time:Instant ;
+<https://example.com/meting/23594557#fenomeentijd> rdfs:type time:Instant ;
 	time:inXSDDateTime "2025-10-22T01:00:00.000"^^xsd:DateTime .
 
-<https://example.com/23594557#identificator> rdfs:type adms:Identifier ;
+<https://example.com/meting/23594557#identificator> rdfs:type adms:Identifier ;
 	skos:notation "23594557" .
 
-<https://example.com/23594557#resultaat> rdfs:type schema:QuantitativeValue ;
-	schema:unit "http://qudt.org/3.2.0/vocab/unit/DeciB_A" ;
+<https://example.com/meting/23594557#resultaat> rdfs:type schema:QuantitativeValue ;
+	schema:unit qudt:DeciB_A ;
 	schema:value "59.5"^^xsd:float .
 
-ex:23594558 rdfs:type sosa:Observation ;
-	adms:identifier <https://example.com/23594558#identificator> ;
-	sosa:hasResult <https://example.com/23594558#resultaat> ;
-	sosa:madeBySensor ex:395623 ;
-	sosa:phenomenonTime <https://example.com/23594558#fenomeentijd> .
+ex-meting:23594558 rdfs:type sosa:Observation ;
+	adms:identifier <https://example.com/meting/23594558#identificator> ;
+	sosa:hasResult <https://example.com/meting/23594558#resultaat> ;
+	sosa:madeBySensor ex-meting:395623 ;
+	sosa:phenomenonTime <https://example.com/meting/23594558#fenomeentijd> .
 
-<https://example.com/23594558#fenomeentijd> rdfs:type time:Instant ;
+<https://example.com/meting/23594558#fenomeentijd> rdfs:type time:Instant ;
 	time:inXSDDateTime "2025-10-22T02:00:00.000"^^xsd:DateTime .
 
-<https://example.com/23594558#identificator> rdfs:type adms:Identifier ;
+<https://example.com/meting/23594558#identificator> rdfs:type adms:Identifier ;
 	skos:notation "23594558" .
 
-<https://example.com/23594558#resultaat> rdfs:type schema:QuantitativeValue ;
-	schema:unit "http://qudt.org/3.2.0/vocab/unit/DeciB_A" ;
+<https://example.com/meting/23594558#resultaat> rdfs:type schema:QuantitativeValue ;
+	schema:unit qudt:DeciB_A ;
 	schema:value "52.9"^^xsd:float .
 
-ex:23594559 rdfs:type sosa:Observation ;
-	adms:identifier <https://example.com/23594559#identificator> ;
-	sosa:hasResult <https://example.com/23594559#resultaat> ;
-	sosa:madeBySensor ex:395623 ;
-	sosa:phenomenonTime <https://example.com/23594559#fenomeentijd> .
+ex-meting:23594559 rdfs:type sosa:Observation ;
+	adms:identifier <https://example.com/meting/23594559#identificator> ;
+	sosa:hasResult <https://example.com/meting/23594559#resultaat> ;
+	sosa:madeBySensor ex-meting:395623 ;
+	sosa:phenomenonTime <https://example.com/meting/23594559#fenomeentijd> .
 
-<https://example.com/23594559#fenomeentijd> rdfs:type time:Instant ;
+<https://example.com/meting/23594559#fenomeentijd> rdfs:type time:Instant ;
 	time:inXSDDateTime "2025-10-22T03:00:00.000"^^xsd:DateTime .
 
-<https://example.com/23594559#identificator> rdfs:type adms:Identifier ;
+<https://example.com/meting/23594559#identificator> rdfs:type adms:Identifier ;
 	skos:notation "23594559" .
 
-<https://example.com/23594559#resultaat> rdfs:type schema:QuantitativeValue ;
-	schema:unit "http://qudt.org/3.2.0/vocab/unit/DeciB_A" ;
+<https://example.com/meting/23594559#resultaat> rdfs:type schema:QuantitativeValue ;
+	schema:unit qudt:DeciB_A ;
 	schema:value "51.6"^^xsd:float .
 
-ex:23594560 rdfs:type sosa:Observation ;
-	adms:identifier <https://example.com/23594560#identificator> ;
-	sosa:hasResult <https://example.com/23594560#resultaat> ;
-	sosa:madeBySensor ex:395623 ;
-	sosa:phenomenonTime <https://example.com/23594560#fenomeentijd> .
+ex-meting:23594560 rdfs:type sosa:Observation ;
+	adms:identifier <https://example.com/meting/23594560#identificator> ;
+	sosa:hasResult <https://example.com/meting/23594560#resultaat> ;
+	sosa:madeBySensor ex-meting:395623 ;
+	sosa:phenomenonTime <https://example.com/meting/23594560#fenomeentijd> .
 
-<https://example.com/23594560#fenomeentijd> rdfs:type time:Instant ;
+<https://example.com/meting/23594560#fenomeentijd> rdfs:type time:Instant ;
 	time:inXSDDateTime "2025-10-22T04:00:00.000"^^xsd:DateTime .
 
-<https://example.com/23594560#identificator> rdfs:type adms:Identifier ;
+<https://example.com/meting/23594560#identificator> rdfs:type adms:Identifier ;
 	skos:notation "23594560" .
 
-<https://example.com/23594560#resultaat> rdfs:type schema:QuantitativeValue ;
-	schema:unit "http://qudt.org/3.2.0/vocab/unit/DeciB_A" ;
+<https://example.com/meting/23594560#resultaat> rdfs:type schema:QuantitativeValue ;
+	schema:unit qudt:DeciB_A ;
 	schema:value "64.0"^^xsd:float .
 
-ex:23594561 rdfs:type sosa:Observation ;
-	adms:identifier <https://example.com/23594561#identificator> ;
-	sosa:hasResult <https://example.com/23594561#resultaat> ;
-	sosa:madeBySensor ex:395623 ;
-	sosa:phenomenonTime <https://example.com/23594561#fenomeentijd> .
+ex-meting:23594561 rdfs:type sosa:Observation ;
+	adms:identifier <https://example.com/meting/23594561#identificator> ;
+	sosa:hasResult <https://example.com/meting/23594561#resultaat> ;
+	sosa:madeBySensor ex-meting:395623 ;
+	sosa:phenomenonTime <https://example.com/meting/23594561#fenomeentijd> .
 
-<https://example.com/23594561#fenomeentijd> rdfs:type time:Instant ;
+<https://example.com/meting/23594561#fenomeentijd> rdfs:type time:Instant ;
 	time:inXSDDateTime "2025-10-22T05:00:00.000"^^xsd:DateTime .
 
-<https://example.com/23594561#identificator> rdfs:type adms:Identifier ;
+<https://example.com/meting/23594561#identificator> rdfs:type adms:Identifier ;
 	skos:notation "23594561" .
 
-<https://example.com/23594561#resultaat> rdfs:type schema:QuantitativeValue ;
-	schema:unit "http://qudt.org/3.2.0/vocab/unit/DeciB_A" ;
+<https://example.com/meting/23594561#resultaat> rdfs:type schema:QuantitativeValue ;
+	schema:unit qudt:DeciB_A ;
 	schema:value "58.3"^^xsd:float .
 
-ex:23594562 rdfs:type sosa:Observation ;
-	adms:identifier <https://example.com/23594562#identificator> ;
-	sosa:hasResult <https://example.com/23594562#resultaat> ;
-	sosa:madeBySensor ex:395623 ;
-	sosa:phenomenonTime <https://example.com/23594562#fenomeentijd> .
+ex-meting:23594562 rdfs:type sosa:Observation ;
+	adms:identifier <https://example.com/meting/23594562#identificator> ;
+	sosa:hasResult <https://example.com/meting/23594562#resultaat> ;
+	sosa:madeBySensor ex-meting:395623 ;
+	sosa:phenomenonTime <https://example.com/meting/23594562#fenomeentijd> .
 
-<https://example.com/23594562#fenomeentijd> rdfs:type time:Instant ;
+<https://example.com/meting/23594562#fenomeentijd> rdfs:type time:Instant ;
 	time:inXSDDateTime "2025-10-22T06:00:00.000"^^xsd:DateTime .
 
-<https://example.com/23594562#identificator> rdfs:type adms:Identifier ;
+<https://example.com/meting/23594562#identificator> rdfs:type adms:Identifier ;
 	skos:notation "23594562" .
 
-<https://example.com/23594562#resultaat> rdfs:type schema:QuantitativeValue ;
-	schema:unit "http://qudt.org/3.2.0/vocab/unit/DeciB_A" ;
+<https://example.com/meting/23594562#resultaat> rdfs:type schema:QuantitativeValue ;
+	schema:unit qudt:DeciB_A ;
 	schema:value "62.0"^^xsd:float .
 
-ex:23594563 rdfs:type sosa:Observation ;
-	adms:identifier <https://example.com/23594563#identificator> ;
-	sosa:hasResult <https://example.com/23594563#resultaat> ;
-	sosa:madeBySensor ex:395623 ;
-	sosa:phenomenonTime <https://example.com/23594563#fenomeentijd> .
+ex-meting:23594563 rdfs:type sosa:Observation ;
+	adms:identifier <https://example.com/meting/23594563#identificator> ;
+	sosa:hasResult <https://example.com/meting/23594563#resultaat> ;
+	sosa:madeBySensor ex-meting:395623 ;
+	sosa:phenomenonTime <https://example.com/meting/23594563#fenomeentijd> .
 
-<https://example.com/23594563#fenomeentijd> rdfs:type time:Instant ;
+<https://example.com/meting/23594563#fenomeentijd> rdfs:type time:Instant ;
 	time:inXSDDateTime "2025-10-22T07:00:00.000"^^xsd:DateTime .
 
-<https://example.com/23594563#identificator> rdfs:type adms:Identifier ;
+<https://example.com/meting/23594563#identificator> rdfs:type adms:Identifier ;
 	skos:notation "23594563" .
 
-<https://example.com/23594563#resultaat> rdfs:type schema:QuantitativeValue ;
-	schema:unit "http://qudt.org/3.2.0/vocab/unit/DeciB_A" ;
+<https://example.com/meting/23594563#resultaat> rdfs:type schema:QuantitativeValue ;
+	schema:unit qudt:DeciB_A ;
 	schema:value "63.9"^^xsd:float .
 
-ex:23594564 rdfs:type sosa:Observation ;
-	adms:identifier <https://example.com/23594564#identificator> ;
-	sosa:hasResult <https://example.com/23594564#resultaat> ;
-	sosa:madeBySensor ex:395623 ;
-	sosa:phenomenonTime <https://example.com/23594564#fenomeentijd> .
+ex-meting:23594564 rdfs:type sosa:Observation ;
+	adms:identifier <https://example.com/meting/23594564#identificator> ;
+	sosa:hasResult <https://example.com/meting/23594564#resultaat> ;
+	sosa:madeBySensor ex-meting:395623 ;
+	sosa:phenomenonTime <https://example.com/meting/23594564#fenomeentijd> .
 
-<https://example.com/23594564#fenomeentijd> rdfs:type time:Instant ;
+<https://example.com/meting/23594564#fenomeentijd> rdfs:type time:Instant ;
 	time:inXSDDateTime "2025-10-22T08:00:00.000"^^xsd:DateTime .
 
-<https://example.com/23594564#identificator> rdfs:type adms:Identifier ;
+<https://example.com/meting/23594564#identificator> rdfs:type adms:Identifier ;
 	skos:notation "23594564" .
 
-<https://example.com/23594564#resultaat> rdfs:type schema:QuantitativeValue ;
-	schema:unit "http://qudt.org/3.2.0/vocab/unit/DeciB_A" ;
+<https://example.com/meting/23594564#resultaat> rdfs:type schema:QuantitativeValue ;
+	schema:unit qudt:DeciB_A ;
 	schema:value "61.7"^^xsd:float .
