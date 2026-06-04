@@ -1,14 +1,6 @@
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX dcterm: <http://purl.org/dc/terms/>
-PREFIX dct: <http://purl.org/dc/terms/>
-PREFIX dc: <http://purl.org/dc/elements/1.1/>
 PREFIX locn: <http://www.w3.org/ns/locn#>
-PREFIX loc: <http://purl.org/ontomedia/core/space#>
-PREFIX pro: <http://purl.org/hpi/patchr#>
-PREFIX pr: <http://purl.org/ontology/prv/core#>
-PREFIX ti: <http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#>
 PREFIX adms: <http://www.w3.org/ns/adms#>
-PREFIX so: <http://schema.org/>
 PREFIX prov: <http://www.w3.org/ns/prov#>
 PREFIX time: <http://www.w3.org/2006/time#>
 PREFIX schema: <https://schema.org/>
