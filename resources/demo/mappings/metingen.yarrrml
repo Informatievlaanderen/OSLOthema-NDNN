@@ -1,6 +1,7 @@
 prefixes:
   ex: https://example.com/
   ex-meting: https://example.com/meting/
+  ex-sensor: https://example.com/sensor/
   melding: https://data.vlaanderen.be/ns/melding#
   dcterms: http://purl.org/dc/terms/
   oa: http://www.w3.org/ns/oa#
@@ -24,7 +25,7 @@ mappings:
       - [a, sosa:Observation] # Klasse Observatie
       - [adms:identifier, ex-meting:$(objectid)#identificator~iri] # Observatie.identificator (Identificator)
       - [sosa:phenomenonTime, ex-meting:$(objectid)#fenomeentijd~iri] # Observatie.fenomeentijd (Moment)
-      - [sosa:madeBySensor, ex-meting:$(Object_ID)~iri] # Observatie.uitgevoerdMet (Sensor)
+      - [sosa:madeBySensor, ex-sensor:$(Object_ID)~iri] # Observatie.uitgevoerdMet (Sensor)
       - [sosa:hasResult, ex-meting:$(objectid)#resultaat~iri] # Observatie.resultaat (KwantitatieveWaarde)
 
   metingen-resultaat:
