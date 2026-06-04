@@ -1,0 +1,99 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix oa: <http://www.w3.org/ns/oa> .
+@prefix ma: <http://www.w3.org/ns/ma-ont#> .
+@prefix rdfs: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sd: <http://www.w3.org/ns/sparql-service-description#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix v: <http://rdf.data-vocabulary.org/#> .
+@prefix schema: <https://schema.org/> .
+@prefix sosa: <http://www.w3.org/ns/sosa/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix ex: <https://example.com/> .
+@prefix melding: <https://data.vlaanderen.be/ns/melding#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+@prefix qudt: <http://qudt.org/3.2.0/vocab/unit/> .
+
+ex:316356 dcterms:type ex:Geluidsoverlast ;
+	rdfs:type melding:Melding ;
+	oa:hasTarget <https://example.com/316356#Gebeurtenis> .
+
+<https://example.com/316356#Gebeurtenis> dcterms:type ex:Straatlawaai ;
+	rdfs:type schema:Event ;
+	time:hasTime "2025-10-22T00:00:00.000"^^xsd:DateTime ;
+	prov:atLocation "GRASMUS"@nl .
+
+ex:316357 dcterms:type ex:Geluidsoverlast ;
+	rdfs:type melding:Melding ;
+	oa:hasTarget <https://example.com/316357#Gebeurtenis> .
+
+<https://example.com/316357#Gebeurtenis> dcterms:type ex:Buren ;
+	rdfs:type schema:Event ;
+	time:hasTime "2025-10-22T01:00:00.000"^^xsd:DateTime ;
+	prov:atLocation "GENADEDAL"@nl .
+
+ex:316358 dcterms:type ex:Geluidsoverlast ;
+	rdfs:type melding:Melding ;
+	oa:hasTarget <https://example.com/316358#Gebeurtenis> .
+
+<https://example.com/316358#Gebeurtenis> dcterms:type ex:Straatlawaai ;
+	rdfs:type schema:Event ;
+	time:hasTime "2025-10-22T02:00:00.000"^^xsd:DateTime ;
+	prov:atLocation "VAN MONS"@nl .
+
+ex:316359 dcterms:type ex:Geluidsoverlast ;
+	rdfs:type melding:Melding ;
+	oa:hasTarget <https://example.com/316359#Gebeurtenis> .
+
+<https://example.com/316359#Gebeurtenis> dcterms:type ex:Buren ;
+	rdfs:type schema:Event ;
+	time:hasTime "2025-10-22T03:00:00.000"^^xsd:DateTime ;
+	prov:atLocation "LEUVEN CENTRUM"@nl .
+
+ex:316360 dcterms:type ex:Geluidsoverlast ;
+	rdfs:type melding:Melding ;
+	oa:hasTarget <https://example.com/316360#Gebeurtenis> .
+
+<https://example.com/316360#Gebeurtenis> dcterms:type ex:Buren ;
+	rdfs:type schema:Event ;
+	time:hasTime "2025-10-22T04:00:00.000"^^xsd:DateTime ;
+	prov:atLocation "VISMARKT"@nl .
+
+ex:316361 dcterms:type ex:Geluidsoverlast ;
+	rdfs:type melding:Melding ;
+	oa:hasTarget <https://example.com/316361#Gebeurtenis> .
+
+<https://example.com/316361#Gebeurtenis> dcterms:type ex:Buren ;
+	rdfs:type schema:Event ;
+	time:hasTime "2025-10-22T05:00:00.000"^^xsd:DateTime ;
+	prov:atLocation "KLEIN BEGIJNHOF"@nl .
+
+ex:316362 dcterms:type ex:Geluidsoverlast ;
+	rdfs:type melding:Melding ;
+	oa:hasTarget <https://example.com/316362#Gebeurtenis> .
+
+<https://example.com/316362#Gebeurtenis> dcterms:type ex:Buren ;
+	rdfs:type schema:Event ;
+	time:hasTime "2025-10-22T06:00:00.000"^^xsd:DateTime ;
+	prov:atLocation "BRUULPARK"@nl .
+
+ex:316363 dcterms:type ex:Geluidsoverlast ;
+	rdfs:type melding:Melding ;
+	oa:hasTarget <https://example.com/316363#Gebeurtenis> .
+
+<https://example.com/316363#Gebeurtenis> dcterms:type ex:Buren ;
+	rdfs:type schema:Event ;
+	time:hasTime "2025-10-22T07:00:00.000"^^xsd:DateTime ;
+	prov:atLocation "GLASBLAZERIJ"@nl .
+
+ex:316364 dcterms:type ex:Geluidsoverlast ;
+	rdfs:type melding:Melding ;
+	oa:hasTarget <https://example.com/316364#Gebeurtenis> .
+
+<https://example.com/316364#Gebeurtenis> dcterms:type ex:Buren ;
+	rdfs:type schema:Event ;
+	time:hasTime "2025-10-22T08:00:00.000"^^xsd:DateTime ;
+	prov:atLocation "KLAVERPARK"@nl .

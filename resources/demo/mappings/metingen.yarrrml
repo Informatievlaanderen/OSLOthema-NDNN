@@ -1,0 +1,51 @@
+prefixes:
+  ex: https://example.com/
+  melding: https://data.vlaanderen.be/ns/melding#
+  dcterms: http://purl.org/dc/terms/
+  oa: http://www.w3.org/ns/oa
+  schema: https://schema.org/
+  xsd: http://www.w3.org/2001/XMLSchema#
+  prov: http://www.w3.org/ns/prov#
+  time: http://www.w3.org/2006/time#
+  sosa: http://www.w3.org/ns/sosa/
+  rdfs: http://www.w3.org/1999/02/22-rdf-syntax-ns#
+  locn: http://www.w3.org/ns/locn#
+  adms: http://www.w3.org/ns/adms#
+  skos: http://www.w3.org/2004/02/skos/core#
+  qudt: http://qudt.org/3.2.0/vocab/unit/
+mappings:
+  metingen:
+    sources:
+      - ['metingen.csv~csv']
+    s: ex:$(objectid)
+    po:
+      - [a, sosa:Observation] # Klasse Observatie
+      - [adms:identifier, ex:$(objectid)#identificator~iri] # Observatie.identificator (Identificator)
+      - [sosa:phenomenonTime, ex:$(objectid)#fenomeentijd~iri] # Observatie.fenomeentijd (Moment)
+      - [sosa:madeBySensor, ex:$(Object_ID)~iri] # Observatie.uitgevoerdMet (Sensor)
+      - [sosa:hasResult, ex:$(objectid)#resultaat~iri] # Observatie.resultaat (KwantitatieveWaarde)
+
+  metingen-resultaat:
+    sources:
+      - ['metingen.csv~csv']
+    s: ex:$(objectid)#resultaat
+    po:
+      - [a, schema:QuantitativeValue] # Klasse KwantitatieveWaarde
+      - [schema:value, $(gemiddelde/DB), xsd:float] # KwantitatieveWaarde.waarde
+      - [schema:unit, qudt:DeciB_A] # KwantitatieveWaarde.eenheid
+
+  metingen-identificator:
+    sources:
+      - ['metingen.csv~csv']
+    s: ex:$(objectid)#identificator
+    po:
+      - [a, adms:Identifier] # Klasse Identificator
+      - [skos:notation, $(objectid)] # Identificator.identificator
+
+  metingen-fenomeentijd:
+    sources:
+      - ['metingen.csv~csv']
+    s: ex:$(objectid)#fenomeentijd
+    po:
+      - [a, time:Instant] # Klasse Moment
+      - [time:inXSDDateTime, $(timestamp), xsd:DateTime] # Moment.inXSDDatumTijd

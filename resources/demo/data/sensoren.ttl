@@ -1,0 +1,200 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix oa: <http://www.w3.org/ns/oa> .
+@prefix ma: <http://www.w3.org/ns/ma-ont#> .
+@prefix rdfs: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sd: <http://www.w3.org/ns/sparql-service-description#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix v: <http://rdf.data-vocabulary.org/#> .
+@prefix schema: <https://schema.org/> .
+@prefix sosa: <http://www.w3.org/ns/sosa/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix ex: <https://example.com/> .
+@prefix melding: <https://data.vlaanderen.be/ns/melding#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+@prefix qudt: <http://qudt.org/3.2.0/vocab/unit/> .
+
+ex:395623 rdfs:type sosa:Sensor ;
+	prov:atLocation <https://example.com/395623#adres> .
+
+<https://example.com/395623#adres> rdfs:type locn:Address ;
+	locn:fullAddress "Tiensestraat 76,3000 Leuven,België"@nl ;
+	locn:locatorDesignator "LEUVEN CENTRUM" .
+
+ex:395625 rdfs:type sosa:Sensor ;
+	prov:atLocation <https://example.com/395625#adres> .
+
+<https://example.com/395625#adres> rdfs:type locn:Address ;
+	locn:fullAddress "Herbert Hooverplein 4,3000 Leuven,Belgium"@nl ;
+	locn:locatorDesignator "LADEUZEPLEIN" .
+
+ex:395627 rdfs:type sosa:Sensor ;
+	prov:atLocation <https://example.com/395627#adres> .
+
+<https://example.com/395627#adres> rdfs:type locn:Address ;
+	locn:fullAddress "Kardinaal Mercierplein 2,3000 Leuven,Belgium"@nl ;
+	locn:locatorDesignator "BOVEN TIENSESTRAAT" .
+
+ex:395629 rdfs:type sosa:Sensor ;
+	prov:atLocation <https://example.com/395629#adres> .
+
+<https://example.com/395629#adres> rdfs:type locn:Address ;
+	locn:fullAddress "Naamsestraat 44,3000 Leuven,België"@nl ;
+	locn:locatorDesignator "PATER DAMIAANPLEIN" .
+
+ex:395630 rdfs:type sosa:Sensor ;
+	prov:atLocation <https://example.com/395630#adres> .
+
+<https://example.com/395630#adres> rdfs:type locn:Address ;
+	locn:fullAddress "Naamsestraat 64,3000 Leuven,België"@nl ;
+	locn:locatorDesignator "PATER DAMIAANPLEIN" .
+
+ex:395631 rdfs:type sosa:Sensor ;
+	prov:atLocation <https://example.com/395631#adres> .
+
+<https://example.com/395631#adres> rdfs:type locn:Address ;
+	locn:fullAddress "Naamsestraat 84,3000 Leuven,België"@nl ;
+	locn:locatorDesignator "PATER DAMIAANPLEIN" .
+
+ex:395632 rdfs:type sosa:Sensor ;
+	prov:atLocation <https://example.com/395632#adres> .
+
+<https://example.com/395632#adres> rdfs:type locn:Address ;
+	locn:fullAddress "Brusselsestraat 4,3000 Leuven,België"@nl ;
+	locn:locatorDesignator "LEUVEN CENTRUM" .
+
+ex:395633 rdfs:type sosa:Sensor ;
+	prov:atLocation <https://example.com/395633#adres> .
+
+<https://example.com/395633#adres> rdfs:type locn:Address ;
+	locn:fullAddress "Brusselsestraat 20,3000 Leuven,België"@nl ;
+	locn:locatorDesignator "VISMARKT" .
+
+ex:395634 rdfs:type sosa:Sensor ;
+	prov:atLocation <https://example.com/395634#adres> .
+
+<https://example.com/395634#adres> rdfs:type locn:Address ;
+	locn:fullAddress "Brusselsestraat 42a,3000 Leuven,België"@nl ;
+	locn:locatorDesignator "VISMARKT" .
+
+ex:395635 rdfs:type sosa:Sensor ;
+	prov:atLocation <https://example.com/395635#adres> .
+
+<https://example.com/395635#adres> rdfs:type locn:Address ;
+	locn:fullAddress "Vaartstraat 44,3000 Leuven,België"@nl ;
+	locn:locatorDesignator "VITAL DECOSTER" .
+
+ex:395636 rdfs:type sosa:Sensor ;
+	prov:atLocation <https://example.com/395636#adres> .
+
+<https://example.com/395636#adres> rdfs:type locn:Address ;
+	locn:fullAddress "Vaartstraat 54,3000 Leuven,België"@nl ;
+	locn:locatorDesignator "VITAL DECOSTER" .
+
+ex:395638 rdfs:type sosa:Sensor ;
+	prov:atLocation <https://example.com/395638#adres> .
+
+<https://example.com/395638#adres> rdfs:type locn:Address ;
+	locn:fullAddress "Hendrik Consciencestraat 61,3000 Leuven,België"@nl ;
+	locn:locatorDesignator "PARKSTRAAT" .
+
+ex:395639 rdfs:type sosa:Sensor ;
+	prov:atLocation <https://example.com/395639#adres> .
+
+<https://example.com/395639#adres> rdfs:type locn:Address ;
+	locn:fullAddress "Parkstraat 109,3000 Leuven,België"@nl ;
+	locn:locatorDesignator "PARKSTRAAT" .
+
+ex:395640 rdfs:type sosa:Sensor ;
+	prov:atLocation <https://example.com/395640#adres> .
+
+<https://example.com/395640#adres> rdfs:type locn:Address ;
+	locn:fullAddress "Janseniusstraat 7,3000 Leuven,België"@nl ;
+	locn:locatorDesignator "PATER DAMIAANPLEIN" .
+
+ex:395641 rdfs:type sosa:Sensor ;
+	prov:atLocation <https://example.com/395641#adres> .
+
+<https://example.com/395641#adres> rdfs:type locn:Address ;
+	locn:fullAddress "Janseniusstraat 1,3000 Leuven,België"@nl ;
+	locn:locatorDesignator "PATER DAMIAANPLEIN" .
+
+ex:395642 rdfs:type sosa:Sensor ;
+	prov:atLocation <https://example.com/395642#adres> .
+
+<https://example.com/395642#adres> rdfs:type locn:Address ;
+	locn:fullAddress "Janseniusstraat 4,3000 Leuven,België"@nl ;
+	locn:locatorDesignator "PATER DAMIAANPLEIN" .
+
+ex:395643 rdfs:type sosa:Sensor ;
+	prov:atLocation <https://example.com/395643#adres> .
+
+<https://example.com/395643#adres> rdfs:type locn:Address ;
+	locn:fullAddress "Alfons Smetsplein 9,3000 Leuven,België"@nl ;
+	locn:locatorDesignator "LEUVEN STADSPARK" .
+
+ex:395644 rdfs:type sosa:Sensor ;
+	prov:atLocation <https://example.com/395644#adres> .
+
+<https://example.com/395644#adres> rdfs:type locn:Address ;
+	locn:fullAddress "Alfons Smetsplein 3c,3000 Leuven,België"@nl ;
+	locn:locatorDesignator "LEUVEN STADSPARK" .
+
+ex:395645 rdfs:type sosa:Sensor ;
+	prov:atLocation <https://example.com/395645#adres> .
+
+<https://example.com/395645#adres> rdfs:type locn:Address ;
+	locn:fullAddress "Joris Helleputteplein 5,3000 Leuven,België"@nl ;
+	locn:locatorDesignator "LEUVEN CENTRUM" .
+
+ex:395646 rdfs:type sosa:Sensor ;
+	prov:atLocation <https://example.com/395646#adres> .
+
+<https://example.com/395646#adres> rdfs:type locn:Address ;
+	locn:fullAddress "Joris Helleputteplein 2,3000 Leuven,België"@nl ;
+	locn:locatorDesignator "LEUVEN CENTRUM" .
+
+ex:395647 rdfs:type sosa:Sensor ;
+	prov:atLocation <https://example.com/395647#adres> .
+
+<https://example.com/395647#adres> rdfs:type locn:Address ;
+	locn:fullAddress "Dijleterrassen,Dirk Boutslaan,3000 Leuven,België"@nl ;
+	locn:locatorDesignator "VISMARKT" .
+
+ex:395648 rdfs:type sosa:Sensor ;
+	prov:atLocation <https://example.com/395648#adres> .
+
+<https://example.com/395648#adres> rdfs:type locn:Address ;
+	locn:fullAddress "Dijleterrassen,Dirk Boutslaan,3000 Leuven,België"@nl ;
+	locn:locatorDesignator "VISMARKT" .
+
+ex:395814 rdfs:type sosa:Sensor ;
+	prov:atLocation <https://example.com/395814#adres> .
+
+<https://example.com/395814#adres> rdfs:type locn:Address ;
+	locn:fullAddress "Monseigneur Ladeuzeplein 20,3000 Leuven,België"@nl ;
+	locn:locatorDesignator "LADEUZEPLEIN" .
+
+ex:395815 rdfs:type sosa:Sensor ;
+	prov:atLocation <https://example.com/395815#adres> .
+
+<https://example.com/395815#adres> rdfs:type locn:Address ;
+	locn:fullAddress "Monseigneur Ladeuzeplein 6,3000 Leuven,België"@nl ;
+	locn:locatorDesignator "LADEUZEPLEIN" .
+
+ex:395816 rdfs:type sosa:Sensor ;
+	prov:atLocation <https://example.com/395816#adres> .
+
+<https://example.com/395816#adres> rdfs:type locn:Address ;
+	locn:fullAddress "Monseigneur Ladeuzeplein 25,3000 Leuven,België"@nl ;
+	locn:locatorDesignator "LADEUZEPLEIN" .
+
+ex:395817 rdfs:type sosa:Sensor ;
+	prov:atLocation <https://example.com/395817#adres> .
+
+<https://example.com/395817#adres> rdfs:type locn:Address ;
+	locn:fullAddress "Monseigneur Ladeuzeplein 12,3000 Leuven,België"@nl ;
+	locn:locatorDesignator "LADEUZEPLEIN" .
