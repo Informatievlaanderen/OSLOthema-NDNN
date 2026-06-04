@@ -9,7 +9,8 @@ prefixes:
   prov: http://www.w3.org/ns/prov#
   time: http://www.w3.org/2006/time#
   sosa: http://www.w3.org/ns/sosa/
-  rdfs: http://www.w3.org/1999/02/22-rdf-syntax-ns#
+  rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
+  rdfs: http://www.w3.org/2000/01/rdf-schema#
   locn: http://www.w3.org/ns/locn#
   adms: http://www.w3.org/ns/adms#
   skos: http://www.w3.org/2004/02/skos/core#
@@ -21,13 +22,12 @@ mappings:
     s: ex-sensor:$(Object.id)
     po:
       - [a, sosa:Sensor] # Klasse Sensor
-      - [prov:atLocation, ex-sensor:$(Object.id)#adres~iri] # Sensor.ligging (Adresvoorstelling)
+      - [prov:atLocation, ex-sensor:$(Object.id)#ligging~iri] # Sensor.ligging (Plaats)
 
-  sensoren-adres:
+  sensoren-ligging:
     sources:
       - ['sensoren.csv~csv']
-    s: ex-sensor:$(Object.id)#adres
+    s: ex-sensor:$(Object.id)#ligging
     po:
-      - [a, locn:Address] # Klasse Adresvoorstelling
-      - [locn:fullAddress, $(sensorlocatie), nl~lang] # Adresvoorstelling.volledigAdres
-      - [locn:locatorDesignator, $(t_sec_nl)] # Adresvoorstelling.locatieaanduiding
+      - [a, dcterms:Location] # Klasse Plaats
+      - [rdfs:label, $(t_sec_nl), nl~lang] # Plaats.plaatsnaam
