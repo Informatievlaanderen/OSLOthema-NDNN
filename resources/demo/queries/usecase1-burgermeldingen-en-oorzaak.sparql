@@ -1,0 +1,21 @@
+PREFIX prov: <http://www.w3.org/ns/prov#>
+PREFIX time: <http://www.w3.org/2006/time#>
+PREFIX schema: <https://schema.org/>
+PREFIX oa: <http://www.w3.org/ns/oa#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX sosa: <http://www.w3.org/ns/sosa/>
+PREFIX melding: <https://data.vlaanderen.be/ns/melding#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT ?meldingId ?soortMelding ?meldingDoelwit ?gebeurtenisTijd ?gebeurtenisPlaats ?gebeurtenisType WHERE {
+  ?meldingId rdf:type melding:Melding .
+  ?meldingId dcterms:type ?soortMelding .
+  ?meldingId oa:hasTarget ?meldingDoelwit .
+  {
+    SELECT ?meldingDoelwit ?gebeurtenisTijd ?gebeurtenisPlaats ?gebeurtenisType WHERE {
+      ?meldingDoelwit rdf:type schema:Event .
+      ?meldingDoelwit time:hasTime ?gebeurtenisTijd .
+      ?meldingDoelwit prov:atLocation ?gebeurtenisPlaats .
+      ?meldingDoelwit dcterms:type ?gebeurtenisType .
+    }
+  }
+}

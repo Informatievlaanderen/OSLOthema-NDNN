@@ -1,0 +1,35 @@
+prefixes:
+  ex: https://example.com/
+  ex-melding: https://example.com/burgermelding/
+  melding: https://data.vlaanderen.be/ns/melding#
+  dcterms: http://purl.org/dc/terms/
+  oa: http://www.w3.org/ns/oa#
+  schema: https://schema.org/
+  xsd: http://www.w3.org/2001/XMLSchema#
+  prov: http://www.w3.org/ns/prov#
+  time: http://www.w3.org/2006/time#
+  sosa: http://www.w3.org/ns/sosa/
+  rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
+  rdfs: http://www.w3.org/2000/01/rdf-schema#
+  locn: http://www.w3.org/ns/locn#
+  adms: http://www.w3.org/ns/adms#
+  skos: http://www.w3.org/2004/02/skos/core#
+  qudt: http://qudt.org/3.2.0/vocab/unit/
+mappings:
+  burgermeldingen:
+    sources:
+      - ['burgermeldingen.csv~csv']
+    s: ex-burgermelding:$(objectid)
+    po:
+      - [a, melding:Melding] # Klasse Melding
+      - [dcterms:type, ex:Geluidsoverlast~iri] # melding.meldingstype
+      - [oa:hasTarget, ex-burgermelding:$(objectid)#Gebeurtenis~iri] # Melding.heeftDoelwit
+  burgermeldingen-gebeurtenissen:
+    sources:
+      - ['burgermeldingen.csv~csv']
+    s: ex-burgermelding:$(objectid)#Gebeurtenis
+    po:
+      - [a, schema:Event] # Klasse Gebeurtenis
+      - [dcterms:type, ex:$(oorzaak)~iri] # Gebeurtenis.type
+      - [prov:atLocation, $(statistischesector), nl~lang] # Gebeurtenis.plaats (GeografischeNaam)
+      - [time:hasTime, $(moment_melding), xsd:DateTime] # Gebeurtenis.tijd

@@ -1,0 +1,175 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix ma: <http://www.w3.org/ns/ma-ont#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sd: <http://www.w3.org/ns/sparql-service-description#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix v: <http://rdf.data-vocabulary.org/#> .
+@prefix schema: <https://schema.org/> .
+@prefix sosa: <http://www.w3.org/ns/sosa/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix ex: <https://example.com/> .
+@prefix ex-sensor: <https://example.com/sensor/> .
+@prefix melding: <https://data.vlaanderen.be/ns/melding#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+@prefix qudt: <http://qudt.org/3.2.0/vocab/unit/> .
+
+ex-sensor:395623 rdf:type sosa:Sensor ;
+	prov:atLocation <https://example.com/sensor/395623#ligging> .
+
+<https://example.com/sensor/395623#ligging> rdf:type dcterms:Location ;
+	rdfs:label "LEUVEN CENTRUM"@nl .
+
+ex-sensor:395625 rdf:type sosa:Sensor ;
+	prov:atLocation <https://example.com/sensor/395625#ligging> .
+
+<https://example.com/sensor/395625#ligging> rdf:type dcterms:Location ;
+	rdfs:label "LADEUZEPLEIN"@nl .
+
+ex-sensor:395627 rdf:type sosa:Sensor ;
+	prov:atLocation <https://example.com/sensor/395627#ligging> .
+
+<https://example.com/sensor/395627#ligging> rdf:type dcterms:Location ;
+	rdfs:label "BOVEN TIENSESTRAAT"@nl .
+
+ex-sensor:395629 rdf:type sosa:Sensor ;
+	prov:atLocation <https://example.com/sensor/395629#ligging> .
+
+<https://example.com/sensor/395629#ligging> rdf:type dcterms:Location ;
+	rdfs:label "PATER DAMIAANPLEIN"@nl .
+
+ex-sensor:395630 rdf:type sosa:Sensor ;
+	prov:atLocation <https://example.com/sensor/395630#ligging> .
+
+<https://example.com/sensor/395630#ligging> rdf:type dcterms:Location ;
+	rdfs:label "PATER DAMIAANPLEIN"@nl .
+
+ex-sensor:395631 rdf:type sosa:Sensor ;
+	prov:atLocation <https://example.com/sensor/395631#ligging> .
+
+<https://example.com/sensor/395631#ligging> rdf:type dcterms:Location ;
+	rdfs:label "PATER DAMIAANPLEIN"@nl .
+
+ex-sensor:395632 rdf:type sosa:Sensor ;
+	prov:atLocation <https://example.com/sensor/395632#ligging> .
+
+<https://example.com/sensor/395632#ligging> rdf:type dcterms:Location ;
+	rdfs:label "LEUVEN CENTRUM"@nl .
+
+ex-sensor:395633 rdf:type sosa:Sensor ;
+	prov:atLocation <https://example.com/sensor/395633#ligging> .
+
+<https://example.com/sensor/395633#ligging> rdf:type dcterms:Location ;
+	rdfs:label "VISMARKT"@nl .
+
+ex-sensor:395634 rdf:type sosa:Sensor ;
+	prov:atLocation <https://example.com/sensor/395634#ligging> .
+
+<https://example.com/sensor/395634#ligging> rdf:type dcterms:Location ;
+	rdfs:label "VISMARKT"@nl .
+
+ex-sensor:395635 rdf:type sosa:Sensor ;
+	prov:atLocation <https://example.com/sensor/395635#ligging> .
+
+<https://example.com/sensor/395635#ligging> rdf:type dcterms:Location ;
+	rdfs:label "VITAL DECOSTER"@nl .
+
+ex-sensor:395636 rdf:type sosa:Sensor ;
+	prov:atLocation <https://example.com/sensor/395636#ligging> .
+
+<https://example.com/sensor/395636#ligging> rdf:type dcterms:Location ;
+	rdfs:label "VITAL DECOSTER"@nl .
+
+ex-sensor:395638 rdf:type sosa:Sensor ;
+	prov:atLocation <https://example.com/sensor/395638#ligging> .
+
+<https://example.com/sensor/395638#ligging> rdf:type dcterms:Location ;
+	rdfs:label "PARKSTRAAT"@nl .
+
+ex-sensor:395639 rdf:type sosa:Sensor ;
+	prov:atLocation <https://example.com/sensor/395639#ligging> .
+
+<https://example.com/sensor/395639#ligging> rdf:type dcterms:Location ;
+	rdfs:label "PARKSTRAAT"@nl .
+
+ex-sensor:395640 rdf:type sosa:Sensor ;
+	prov:atLocation <https://example.com/sensor/395640#ligging> .
+
+<https://example.com/sensor/395640#ligging> rdf:type dcterms:Location ;
+	rdfs:label "PATER DAMIAANPLEIN"@nl .
+
+ex-sensor:395641 rdf:type sosa:Sensor ;
+	prov:atLocation <https://example.com/sensor/395641#ligging> .
+
+<https://example.com/sensor/395641#ligging> rdf:type dcterms:Location ;
+	rdfs:label "PATER DAMIAANPLEIN"@nl .
+
+ex-sensor:395642 rdf:type sosa:Sensor ;
+	prov:atLocation <https://example.com/sensor/395642#ligging> .
+
+<https://example.com/sensor/395642#ligging> rdf:type dcterms:Location ;
+	rdfs:label "PATER DAMIAANPLEIN"@nl .
+
+ex-sensor:395643 rdf:type sosa:Sensor ;
+	prov:atLocation <https://example.com/sensor/395643#ligging> .
+
+<https://example.com/sensor/395643#ligging> rdf:type dcterms:Location ;
+	rdfs:label "LEUVEN STADSPARK"@nl .
+
+ex-sensor:395644 rdf:type sosa:Sensor ;
+	prov:atLocation <https://example.com/sensor/395644#ligging> .
+
+<https://example.com/sensor/395644#ligging> rdf:type dcterms:Location ;
+	rdfs:label "LEUVEN STADSPARK"@nl .
+
+ex-sensor:395645 rdf:type sosa:Sensor ;
+	prov:atLocation <https://example.com/sensor/395645#ligging> .
+
+<https://example.com/sensor/395645#ligging> rdf:type dcterms:Location ;
+	rdfs:label "LEUVEN CENTRUM"@nl .
+
+ex-sensor:395646 rdf:type sosa:Sensor ;
+	prov:atLocation <https://example.com/sensor/395646#ligging> .
+
+<https://example.com/sensor/395646#ligging> rdf:type dcterms:Location ;
+	rdfs:label "LEUVEN CENTRUM"@nl .
+
+ex-sensor:395647 rdf:type sosa:Sensor ;
+	prov:atLocation <https://example.com/sensor/395647#ligging> .
+
+<https://example.com/sensor/395647#ligging> rdf:type dcterms:Location ;
+	rdfs:label "VISMARKT"@nl .
+
+ex-sensor:395648 rdf:type sosa:Sensor ;
+	prov:atLocation <https://example.com/sensor/395648#ligging> .
+
+<https://example.com/sensor/395648#ligging> rdf:type dcterms:Location ;
+	rdfs:label "VISMARKT"@nl .
+
+ex-sensor:395814 rdf:type sosa:Sensor ;
+	prov:atLocation <https://example.com/sensor/395814#ligging> .
+
+<https://example.com/sensor/395814#ligging> rdf:type dcterms:Location ;
+	rdfs:label "LADEUZEPLEIN"@nl .
+
+ex-sensor:395815 rdf:type sosa:Sensor ;
+	prov:atLocation <https://example.com/sensor/395815#ligging> .
+
+<https://example.com/sensor/395815#ligging> rdf:type dcterms:Location ;
+	rdfs:label "LADEUZEPLEIN"@nl .
+
+ex-sensor:395816 rdf:type sosa:Sensor ;
+	prov:atLocation <https://example.com/sensor/395816#ligging> .
+
+<https://example.com/sensor/395816#ligging> rdf:type dcterms:Location ;
+	rdfs:label "LADEUZEPLEIN"@nl .
+
+ex-sensor:395817 rdf:type sosa:Sensor ;
+	prov:atLocation <https://example.com/sensor/395817#ligging> .
+
+<https://example.com/sensor/395817#ligging> rdf:type dcterms:Location ;
+	rdfs:label "LADEUZEPLEIN"@nl .

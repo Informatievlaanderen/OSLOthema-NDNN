@@ -1,0 +1,42 @@
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX locn: <http://www.w3.org/ns/locn#>
+PREFIX adms: <http://www.w3.org/ns/adms#>
+PREFIX prov: <http://www.w3.org/ns/prov#>
+PREFIX time: <http://www.w3.org/2006/time#>
+PREFIX schema: <https://schema.org/>
+PREFIX oa: <http://www.w3.org/ns/oa#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX sosa: <http://www.w3.org/ns/sosa/>
+PREFIX melding: <https://data.vlaanderen.be/ns/melding#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT ?observatieId ?observatieResultaatEenheid ?observatieResultaatWaarde ?observatieSensorId ?observatieTijd ?observatieSensorPlaatsaanduiding WHERE {
+  ?observatieId rdf:type sosa:Observation .
+  ?observatieId sosa:madeBySensor ?observatieSensorId .
+  ?observatieId sosa:hasResult ?observatieResultaatId .
+  ?observatieId sosa:phenomenonTime ?observatieFenomeentijdId .
+{
+    SELECT ?observatieResultaatId ?observatieResultaatEenheid ?observatieResultaatWaarde WHERE {
+      ?observatieResultaatId rdf:type schema:QuantitativeValue .
+      ?observatieResultaatId schema:unit ?observatieResultaatEenheid .
+      ?observatieResultaatId schema:value ?observatieResultaatWaarde .
+    }
+  }
+  {
+    SELECT ?observatieFenomeentijdId ?observatieTijd WHERE {
+      ?observatieFenomeentijdId rdf:type time:Instant .
+      ?observatieFenomeentijdId time:inXSDDateTime ?observatieTijd .
+    }
+  }
+  {
+    SELECT ?observatieSensorId ?observatieSensorPlaatsaanduiding WHERE {
+      ?observatieSensorId rdf:type sosa:Sensor .
+      ?observatieSensorId prov:atLocation ?observatieSensorPlaatsId .
+      {
+        SELECT ?observatieSensorPlaatsId ?observatieSensorPlaatsaanduiding  WHERE {
+          ?observatieSensorPlaatsId rdf:type dcterms:Location .
+          ?observatieSensorPlaatsId rdfs:label ?observatieSensorPlaatsaanduiding .
+        }
+      }
+    }
+  }
+}
