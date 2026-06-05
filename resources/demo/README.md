@@ -1,5 +1,17 @@
 # Demo
 
+## Mapping
+
+De mapping van de demo data in CSV (Excel) naar OSLO als Linked Data gebeurd door [YARRRML](https://rml.io/yarrrml/),
+hiervoor bestaat een editor [Matey](https://rml.io/yarrrml/matey/) waarin kleine bestanden getest kunnen worden.
+YARRRML laat toe om op een declaratieve wijze de mapping te beschrijven en
+automatisch te laten uitvoeren door tools zoals [RMLMapper](https://github.com/RMLio/rmlmapper-java).
+
+De mapping bestanden zijn beschikbaar in [mappings](./mappings) per onderdeel: sensoren, metingen, en burgermeldingen.
+Deze bestanden kunnen apart opgeslagen worden bij meerdere partijen (afhankelijk van wie welke zaken beheerd).
+Door OSLO toe te passen (Linked Data) kunnen deze verschillende bronbestanden bevraagd worden
+door queries ([SPARQL](https://www.w3.org/TR/sparql11-query/)) zoals hieronder per use case aangetoond als demo met [Communica](https://query.comunica.dev/)
+
 ## Use case 1: Medewerker wil de burgermeldingen oplijsten
 
 Deze query lijst alle burgermeldingen op met de oorzaak.
