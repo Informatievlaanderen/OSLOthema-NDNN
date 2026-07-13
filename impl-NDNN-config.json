@@ -2,19 +2,19 @@
   "title": "Implementatiemodel Geluidsmeldingen en -metingen",
   "category": "https://data.vlaanderen.be/id/concept/StandaardType/Implementatiemodel",
   "usage": "https://data.vlaanderen.be/id/concept/StandaardGebruik/Aanbevolen",
-  "status": "https://data.vlaanderen.be/id/concept/StandaardStatus/OntwerpStandaard",
+  "status": "https://data.vlaanderen.be/id/concept/StandaardStatus/KandidaatStandaard",
   "responsibleOrganisation": [
     {
       "name": "Agentschap Digitaal Vlaanderen",
       "resourceReference": "https://data.vlaanderen.be/id/organisatie/OVO002949"
     }
   ],
-  "publicationDate": "2026-04-14",
+  "publicationDate": "2026-06-12",
   "descriptionFileName": "NDNN-description.md",
   "specificationDocuments": [
     {
       "name": "Implementatiemodel Nudging Down Night Noise",
-      "resourceReference": "https://data.vlaanderen.be/doc/implementatiemodel/geluidsmeldingen-en-geluidsmetingen/ontwerpstandaard/2026-05-20"
+      "resourceReference": "https://data.vlaanderen.be/doc/implementatiemodel/geluidsmeldingen-en-geluidsmetingen/"
     }
   ],
   "documentation": [],
@@ -88,10 +88,10 @@
   }
 ],
   "dateOfRegistration": "2025-10-27",
-  "dateOfAcknowledgementByWorkingGroup": "",
+  "dateOfAcknowledgementByWorkingGroup": "2026-06-12",
   "dateOfAcknowledgementBySteeringCommittee": "",
-  "datePublicReviewStart": "",
-  "datePublicReviewEnd": "",
+  "datePublicReviewStart": "2026-04-12",
+  "datePublicReviewEnd": "2026-06-12",
   "endOfPublicationDate": "",
   "domain": "https://data.vlaanderen.be/id/concept/Domein/Welzijn"
 }
