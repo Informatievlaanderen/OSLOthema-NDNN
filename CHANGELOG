@@ -1,3 +1,11 @@
-YYYY-MM--DD
-  - Mijn aanpassing1
-  - Mijn aanpassing2
+2026-07-14
+- Verwijderd foutieve releaseverwijzing erkend_2026-07-07_v0.0.1. De huidige publicatie betreft de kandidaatstandaard; de erkende release was hier niet van toepassing.
+- Typfout gecorrigeerd: "DE Nudging Down Night Noise-context" → "Nudging Down Night Noise-context".
+- Mapping van Dossiertype gecorrigeerd naar de juiste URI (foutief label verwees naar een niet-bestaande term).
+- Ongeldige mapping naar skos:Activiteittype verwijderd en vervangen door de correcte referentie.
+- Ongeldige mappings voor Plaats en Tijd naar niet-bestaande schema.org-termen gecorrigeerd.
+- Consistent gebruik van hoofdletters doorgevoerd voor attributen zoals Plaats, Gebeurtenistype en InputType.
+- Mapping naar w3.org/ns/sosa/Property vervangen door http://www.w3.org/ns/ssn/Property.
+- Mapping van ligging gecorrigeerd naar https://data.vlaanderen.be/ns/verkeersmetingen#ligging.
+- Diverse kleine tekstuele correcties uitgevoerd, waaronder ontbrekende spaties en schrijfwijzen.
+- Nagekeken dat een versieloze publicatie reeds beschikbaar is in de configuratie. Geen bijkomende actie vereist.
